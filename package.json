@@ -1,0 +1,24 @@
+{
+  "name": "book-app",
+  "version": "1.0.0",
+  "description": "Bookish SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnikoBorosova/book-app.git"
+  },
+  "author": "AnikoBorosova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnikoBorosova/book-app/issues"
+  },
+  "homepage": "https://github.com/AnikoBorosova/book-app#readme"
+}
