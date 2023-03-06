@@ -1,9 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import CurrentlyReading from '../views/CurrentlyReadingView.vue'
-import ReadView from '../views/ReadView.vue'
-import ToReadView from '../views/ToReadView.vue'
-import FavouritesView from '../views/FavouritesView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import CurrentlyReading from '../views/CurrentlyReadingView.vue';
+import ReadView from '../views/ReadView.vue';
+import ToReadView from '../views/ToReadView.vue';
+import FavouritesView from '../views/FavouritesView.vue';
 
 
 const router = createRouter({
@@ -27,7 +27,6 @@ const router = createRouter({
       name: 'currently-reading',
       component: CurrentlyReading
     },
-    /*
     {
       path: '/read',
       name: 'read',
@@ -43,8 +42,7 @@ const router = createRouter({
       name: 'favourites',
       component: FavouritesView
     }
-    */
   ]
-})
+});
 
-export default router
+export default router;
