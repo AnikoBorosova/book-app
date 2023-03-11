@@ -9,8 +9,10 @@ import NewBook from '../components/NewBook.vue';
   <div>
     <NewBook />
   </div>
+  <!--
   <div>
     <BookList />
   </div>
+  -->
 </main>
 </template>

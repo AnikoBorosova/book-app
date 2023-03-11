@@ -4,8 +4,6 @@ import CurrentlyReading from '../views/CurrentlyReadingView.vue';
 import ReadView from '../views/ReadView.vue';
 import ToReadView from '../views/ToReadView.vue';
 import FavouritesView from '../views/FavouritesView.vue';
-import MainPage from '../components/MainPage.vue'
-
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,14 +12,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    },
-    {
-      path: '/pages',
-      name: 'pages',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
     },
     {
       path: '/currently-reading',

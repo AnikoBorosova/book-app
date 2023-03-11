@@ -5,7 +5,12 @@
   <input class="item"  type="text" v-model="publisher" placeholder="Publisher"/>
   <input class="item"  type="text" v-model="publishYear" placeholder="Year of publishing"/>
   <input class="item"  type="text" v-model="category" placeholder="Category"/>
-  <button class="green" @click="log">Submit</button>
+  <button class="green" @click="addNewBook">Submit</button>
+  <br>
+  <div>
+    <p>{{ newTitle }}</p>
+    <p>{{ newAuthor }}</p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -17,12 +22,18 @@ export default {
       publisher: '',
       publishYear: '',
       category: '',
+      newTitle: '',
+      newAuthor: '',
     }
   },
   methods: {
-    log: function() {
-      console.log(this.title, this.author, this.publisher, this.publishYear, this.category,)
-    }
+    addNewBook: function() {
+      this.newTitle = this.title;
+      this.newAuthor = this.author;
+    },
+    emitNewBook: function() {
+      this.$emit(this.title, this.author, this.publisher, this.publishYear, this.category);
+    },
   },
 }
 </script>
