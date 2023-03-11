@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import BookList from '../components/BookList.vue'
+import BookList from '../components/BookList.vue';
+import NewBook from '../components/NewBook.vue';
 </script>
 
 <template>
-  <template>To Read</template>
-  <main>
+  <main id="subpage">
+  <h2 class="green">To Read</h2>
+  <div>
+    <NewBook />
+  </div>
+  <div>
     <BookList />
-  </main>
+  </div>
+</main>
 </template>

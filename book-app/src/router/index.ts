@@ -4,6 +4,7 @@ import CurrentlyReading from '../views/CurrentlyReadingView.vue';
 import ReadView from '../views/ReadView.vue';
 import ToReadView from '../views/ToReadView.vue';
 import FavouritesView from '../views/FavouritesView.vue';
+import MainPage from '../components/MainPage.vue'
 
 
 const router = createRouter({
